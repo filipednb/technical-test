@@ -1,3 +1,59 @@
+### Hostfully API Project Setup Guide
+
+Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+	•	Java 17 or later
+	•	Gradle 6.8 or later
+	•	Git (optional, for cloning the repository)
+	•	H2 Database (included as an in-memory database)
+	•	Postman or Bruno (optional, for API testing)
+
+Getting Started
+
+1. Clone the Repository
+
+If you haven’t already cloned the repository, clone it using Git:
+
+```bash
+git clone https://github.com/filipednb/technical-test.git
+cd hostfullyapi
+```
+
+2. Build the Project
+
+Use Gradle to build the project. This will install dependencies, compile the code, run tests, and package the application:
+
+```bash
+./gradlew clean build
+```
+
+3. Run the Application
+
+```bash
+./gradlew bootRun
+```
+
+Alternatively, you can run the generated jar file:
+
+```bash
+java -jar build/libs/hostfullyapi-0.0.1-SNAPSHOT.jar
+```
+
+4. Access the API
+
+Once the application is running, you can access the API/Swagger at http://localhost:8080/swagger-ui/index.html
+
+5. Testing the API
+
+The project includes unit and integration tests. You can run these tests using Gradle:
+
+```bash
+./gradlew test
+```
+
+
 Development Process for the Hostfully Booking API
 
 1. Data model:
